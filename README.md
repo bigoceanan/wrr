@@ -1,11 +1,12 @@
 # wrr
 nignx smooth weighted round-robin balancing的一个简单实现【4个元素：ABCD】
 算法请参考：https://github.com/nginx/nginx/commit/52327e0627f49dbda1e8db695e63a4b0af4448b1
+
 实现参考了：https://github.com/SunilBojanapally/WRR-Scheduler
+
 1,编译过程：#gcc mywrr4.c -o mywrr4
 2,运行实例：ABCD的权重分别为 3 4 1 2
-3,
-#./mywrr4 3 4 1 2
+3,#./mywrr4 3 4 1 2
 node[0].name=[A] and node.weight=[3]
 node[1].name=[B] and node.weight=[4]
 node[2].name=[C] and node.weight=[1]
